@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "experiments": [
+    {
+      "key": "pi05_init",
+      "backbone": "pi05",
+      "training_config": "configs/pi05_init.json"
+    },
+    {
+      "key": "pi05_baseline",
+      "backbone": "pi05",
+      "training_config": "configs/pi05_baseline.json",
+      "evaluation_config": "configs/eval_pi05_baseline.json"
+    },
+    {
+      "key": "pi05_echo07",
+      "backbone": "pi05",
+      "training_config": "configs/pi05_echo07.json",
+      "evaluation_config": "configs/eval_pi05_echo07.json",
+      "compare": [
+        "pi05_baseline"
+      ]
+    },
+    {
+      "key": "pi05_boundary04",
+      "backbone": "pi05",
+      "training_config": "configs/pi05_boundary04.json",
+      "evaluation_config": "configs/eval_pi05_boundary04.json",
+      "compare": [
+        "pi05_echo07"
+      ]
+    },
+    {
+      "key": "pi05_classifier3",
+      "backbone": "pi05",
+      "training_config": "configs/pi05_classifier3.json",
+      "evaluation_config": "configs/eval_pi05_classifier3.json",
+      "compare": [
+        "pi05_echo07"
+      ]
+    },
+    {
+      "key": "pi05_sequential3",
+      "backbone": "pi05",
+      "training_config": "configs/pi05_sequential3.json",
+      "evaluation_config": "configs/eval_pi05_sequential3.json",
+      "compare": [
+        "pi05_echo07"
+      ]
+    },
+    {
+      "key": "gr00t_init",
+      "backbone": "gr00t",
+      "training_config": "configs/gr00t_init.json"
+    },
+    {
+      "key": "gr00t_baseline",
+      "backbone": "gr00t",
+      "training_config": "configs/gr00t_baseline.json",
+      "evaluation_config": "configs/eval_gr00t_baseline.json"
+    },
+    {
+      "key": "gr00t_baseline_failure",
+      "backbone": "gr00t",
+      "training_config": "configs/gr00t_baseline_failure.json",
+      "evaluation_config": "configs/eval_gr00t_baseline_failure.json"
+    },
+    {
+      "key": "gr00t_echo07",
+      "backbone": "gr00t",
+      "training_config": "configs/gr00t_echo07.json",
+      "evaluation_config": "configs/eval_gr00t_echo07.json",
+      "compare": [
+        "gr00t_baseline",
+        "gr00t_baseline_failure"
+      ]
+    },
+    {
+      "key": "gr00t_boundary04",
+      "backbone": "gr00t",
+      "training_config": "configs/gr00t_boundary04.json",
+      "evaluation_config": "configs/eval_gr00t_boundary04.json",
+      "compare": [
+        "gr00t_echo07"
+      ]
+    },
+    {
+      "key": "gr00t_signal_isolated",
+      "backbone": "gr00t",
+      "training_config": "configs/gr00t_signal_isolated.json",
+      "evaluation_config": "configs/eval_gr00t_signal_isolated.json",
+      "compare": [
+        "gr00t_echo07",
+        "gr00t_baseline_failure"
+      ]
+    }
+  ]
+}

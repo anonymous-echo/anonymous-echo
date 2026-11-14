@@ -1,0 +1,38 @@
+{
+  "method": "echo",
+  "upstream": "vendor/Isaac-GR00T",
+  "public_checkpoint": "data/pretrained/gr00t_public",
+  "initialization": "runs/gr00t_init/checkpoints/step_00010000",
+  "manifest": "manifests/training_current.json.gz",
+  "data_config": "configs/data.json",
+  "statistics": "configs/gr00t_statistics.json",
+  "validation_receipt": "data/validation_gr00t_boundary04.json",
+  "run_dir": "runs/gr00t_boundary04",
+  "seed": 42,
+  "world_size": 8,
+  "global_batch_size": 128,
+  "micro_batch_size": 4,
+  "num_workers": 2,
+  "cpu_threads": 4,
+  "max_steps": 2500,
+  "warmup_steps": 125,
+  "lr": 0.0001,
+  "min_lr": 1e-05,
+  "lr_schedule": "cosine",
+  "weight_decay": 1e-05,
+  "betas": [
+    0.95,
+    0.999
+  ],
+  "eps": 1e-08,
+  "grad_clip": 1,
+  "save_interval": 500,
+  "sampling_weights": {
+    "success": 40,
+    "failure": 1,
+    "recovery": 20
+  },
+  "boundary_radius_seconds": 0.2,
+  "boundary_seed": 20261108,
+  "forcing": 0.7
+}

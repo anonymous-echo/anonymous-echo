@@ -1,0 +1,21 @@
+{
+  "backbone": "gr00t",
+  "simulator_python": ".venv/bin/python",
+  "native_inference_python": ".venv-gr00t/bin/python",
+  "manifest": "manifests/evaluation_current.json.gz",
+  "scene_root": "data/failure_scenes",
+  "scene_adapter": "failure_scenes_v1",
+  "prompt_registry": "manifests/prompts_current.json",
+  "checkpoint": "runs/gr00t_echo07/checkpoints/step_00002500",
+  "run_dir": "runs/eval_gr00t_echo07",
+  "device": "cuda:0",
+  "render_gpu_id": 0,
+  "max_steps": 520,
+  "execute_horizon": 8,
+  "settle_steps": 20,
+  "noise_xy": 0.02,
+  "control_hz": 20,
+  "video_fps": 20,
+  "num_inference_steps": 8,
+  "offsamples": 4
+}

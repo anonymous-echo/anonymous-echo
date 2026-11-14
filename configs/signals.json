@@ -1,0 +1,6 @@
+{
+  "ss_threshold": 0.5,
+  "fs_threshold": 0.5,
+  "success_window_seconds": 3.0,
+  "control_hz": 20
+}
